@@ -35,7 +35,7 @@ use rand::{thread_rng, RngCore};
 /// In the extremely unlikely event that no candidate is found after 128
 /// trials, we can begin incrementing the high byte from 0 (its initial
 /// value) by 1s up to 64, giving 128*64 trials in total and cutting the
-/// failure probability to 2**(lg(3/4)*128*64) ~= 2**(-3400).
+/// failure probability to 2**(lg(3/4)*128*64) ~= 2**(-3400) ~= 0.
 fn encode_bytes_in_point(data: &[u8]) -> (RistrettoPoint, usize) {
     assert!(data.len() <= 30);
     let mut bytes = [0u8; 32];
