@@ -3,6 +3,7 @@ name = "ristretto-data-encoding"
 version = "0.1.0"
 authors = ["Henry de Valence <hdevalence@hdevalence.ca>"]
 edition = "2018"
+license = "MIT OR Apache-2.0"
 
 [dependencies]
 curve25519-dalek = "1.1.3"
